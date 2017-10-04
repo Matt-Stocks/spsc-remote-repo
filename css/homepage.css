@@ -1,0 +1,80 @@
+/****** Positioning *********/
+
+/***** Hero Banner *****/
+
+.hero {
+  padding-bottom: 7rem;
+}
+
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#temples-hero {
+  width: 100%;
+}
+
+#temples-hero-overlay {
+  width: 80%;
+}
+
+#hero-text {
+  text-align: center;
+  font-size: 5vw;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+@media (min-width: 700px) {
+  #hero-text {
+    font-size: 3.5rem;
+  }
+}
+
+/***** Content *****/
+
+/*** Strata Plates Row ***/
+#strata-plates-img {
+  width: 55%;
+  order: 2;
+}
+
+#strata-plates-title {
+  order: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#strata-plates-title h2 {
+  margin-bottom: 0;
+}
+
+@media (min-width: 550px) {
+  #strata-plates-img {
+    width: 100%;
+  }
+
+  #strata-plates-title {
+    margin-left: -10%;
+  }
+}
+
+/*** Tumblehome Row ***/
+#dune-bowl-title {
+  position: absolute;
+}
+
+
+@media (min-width: 550px) {
+  #tumblehome-img {
+    order: 2;
+  }
+
+  #tumblehome-title {
+    order: 1;
+  }
+}
+
+/*** Hamada Quote Row ***/
