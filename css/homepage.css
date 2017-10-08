@@ -74,6 +74,8 @@
 
   #tumblehome-title {
     order: 1;
+    margin-bottom: 1rem;
+    align-self: flex-start;
   }
 }
 
@@ -152,6 +154,10 @@
   margin-left: auto;
 }
 
+#five-element-design-title {
+  padding-top: 1rem;
+}
+
 @media (min-width: 550px) {
   .flex-end-row {
     display: flex;
@@ -175,8 +181,9 @@
 
   #five-element-design-title {
     margin-bottom: 0;
-    padding-right: 1rem;
+    margin-right: 1rem;
     text-align: right;
+    padding-top: 0;
   }
 }
 

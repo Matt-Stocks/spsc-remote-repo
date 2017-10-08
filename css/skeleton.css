@@ -168,7 +168,7 @@ p {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
+/*a {
   position: relative;
   color: rgba(0,0,0,1);
   text-decoration: none;
@@ -213,7 +213,7 @@ a:hover:before {
 }
 .a-img a:hover:before {
   visibility: hidden;
-}
+}*/
 #socialMain a:hover:before {
   visibility: hidden;
 }

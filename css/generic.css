@@ -33,6 +33,10 @@
   text-align: right;
 }
 
+.float-right {
+  float: right;
+}
+
 .center-align {
   text-align: center;
 }
@@ -95,6 +99,11 @@
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
+}
+
+.a-h2 {
+  display: inline-flex;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 550px) {
