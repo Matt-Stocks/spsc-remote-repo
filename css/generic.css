@@ -8,9 +8,19 @@
   padding-top: 3.5rem;
 }
 
+.mobile-spacer {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
 @media (min-width: 550px) {
   .none-clearing {
     margin-top: -7rem;
+  }
+
+  .mobile-spacer {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .double-space-clearing {
@@ -21,6 +31,10 @@
 /***** Alignment *****/
 .right-align {
   text-align: right;
+}
+
+.center-align {
+  text-align: center;
 }
 
 /***** General *****/
