@@ -78,3 +78,121 @@
 }
 
 /*** Hamada Quote Row ***/
+
+#hamada-quote {
+  padding-bottom: 1rem;
+}
+
+
+@media (min-width: 550px) {
+  #hamada-quote {
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+}
+
+/*** Dune Bowl Row ***/
+
+#dune-bowl-title {
+  top: 30%;
+}
+
+/*** Pandora Quote Row ***/
+#tumblehome-variations {
+  padding-top: 3.5rem;
+}
+
+#tumblehome-variations-img {
+  max-width: 80%;
+}
+
+@media (min-width: 550px) {
+  #pandora-quote {
+    display: flex;
+    align-items: center;
+  }
+
+  #tumblehome-variations-img {
+    max-width: 100%;
+  }
+}
+
+/*** Spray Series Row ***/
+
+@media (min-width: 550px) {
+}
+
+/*** Five Element Row ***/
+#five-element-title {
+  padding: 2rem 0 0 0;
+}
+
+@media (min-width: 550px) {
+  #five-element-title {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -30%);
+    backface-visibility: hidden;
+  }
+}
+
+@media (min-width: 700px) {
+  #five-element-title {
+    width: 33.33%;
+  }
+}
+
+/*** Five Element Design Row ***/
+
+#five-element-design-image {
+  max-width: 80%;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+@media (min-width: 550px) {
+  .flex-end-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  #five-element-design-title-div {
+    order: 1;
+  }
+
+  #five-element-design-image-div {
+    order: 2;
+    width: 65%;
+  }
+
+  #five-element-design-image {
+    max-width: 100%;
+  }
+
+  #five-element-design-title {
+    margin-bottom: 0;
+    padding-right: 1rem;
+    text-align: right;
+  }
+}
+
+/*** Pourer & Dripper Row ***/
+/* NONE */
+
+/*** Sea Of Greens Row ***/
+
+#sea-of-greens {
+  top: 30%;
+  display: absolute;
+}
+
+@media (min-width: 550px) {
+  #sea-of-greens {
+    left: 0;
+    margin-left: -5%;
+  }
+}

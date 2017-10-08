@@ -1,13 +1,6 @@
-#sea {
-  top: 30%;
-  display: absolute;
-}
+
 
 @media (min-width: 550px) {
-  #sea {
-    left: 0;
-    margin-left: -5%;
-  }
 }
 
 @media (min-width: 700px) {
