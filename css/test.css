@@ -1,6 +1,6 @@
 a {
   text-decoration: none;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
 }
 
 .navbar-link h2 {
@@ -20,13 +20,17 @@ a h3 {
   backface-visibility: hidden;
 }
 
-p a,
+p a {
+  color: #00f;
+}
+
+p a:hover,
 a h2:hover,
 a h1:hover {
   color: rgba(0,0,0,0.7);
 }
 
-p a,
+p a:before,
 a h2:before,
 a h1:before {
   content: "";
@@ -42,7 +46,7 @@ a h1:before {
   backface-visibility: hidden;
 }
 
-p a,
+p a:hover:before,
 a h2:hover:before,
 a h1:hover:before {
   visibility: visible;
