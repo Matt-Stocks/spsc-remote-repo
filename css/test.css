@@ -13,11 +13,14 @@ p a,
 a h1,
 a h2,
 a h3 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
   color: rgba(0,0,0,1);
   text-decoration: none;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 p a {
@@ -41,27 +44,38 @@ a h1:before {
   left: 0;
   background-color: rgba(0,0,0,0.7);
   visibility: hidden;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 p a:hover:before,
 a h2:hover:before,
 a h1:hover:before {
   visibility: visible;
-  transform: scaleX(1);
-  backface-visibility: hidden
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden
 }
 
 a img {
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 a:hover img {
-  filter: brightness(85%);
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
+  -webkit-transition: -webkit-filter 0.5s ease-in-out;
+  transition: -webkit-filter 0.5s ease-in-out;
   transition: filter 0.5s ease-in-out;
-  backface-visibility: hidden
+  transition: filter 0.5s ease-in-out, -webkit-filter 0.5s ease-in-out;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden
 }
 
 @media (min-width: 550px) {

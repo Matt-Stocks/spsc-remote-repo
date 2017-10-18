@@ -31,10 +31,19 @@ body {
 }
 
 .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 7rem;
 }
 
@@ -58,9 +67,16 @@ body {
 
 /*** Main Nav Menu ***/
 #mainNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -71,9 +87,16 @@ body {
 
 #social {
   padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 0.8rem;
 }
 
@@ -90,16 +113,20 @@ body {
 /* default */
 .mainNavShow {
   opacity: 100;
+  -webkit-transition: ease-in, opacity 0.6s;
   transition: ease-in, opacity 0.6s;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 /* override */
 .mainNavHide {
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: visibility 0.6s ease-out, opacity 0.6s;
   transition: visibility 0.6s ease-out, opacity 0.6s;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 /*** Navbar Items ***/
@@ -107,10 +134,19 @@ body {
   list-style: none;
   margin-bottom: 0;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar-item {
@@ -131,20 +167,30 @@ body {
 
 /****** Footer *********/
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-height: 50rem;
   padding-top: 3.5rem;
 }
 
 #textFootright {
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 #textFootleft {
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 #socialFoot a {
@@ -182,13 +228,15 @@ body {
 
 @media (min-width: 700px) {
   #textFootleft {
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     position: absolute;
     left: 0;
   }
 
   #textFootright {
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     position: absolute;
     right: 0;
   }
